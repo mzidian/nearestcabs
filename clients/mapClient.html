@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nearest Cabs</title>
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="/jquery.min.js" ></script>
+    <script src="/clientAPI.js"></script>
+    <script src="/mapClient.js"></script>
+  </head>
+  <body>
+    <div id=controls>
+        <input id=add_find_cab_btn type=button value="Add/Find Cab #" />
+        <input type=text id=cab_id />
+        <input id=delete_cab_btn type=button value="Delete Cab #" />
+        <input type=text id=delete_cab_id />
+        <input id=delete_all_cabs_btn type=button value="Delete All Cabs" />
+    </div>
+    <div id=map-canvas></div>
+  </body>
+</html>

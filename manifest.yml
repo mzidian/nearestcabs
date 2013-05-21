@@ -1,0 +1,17 @@
+--- 
+applications: 
+  .: 
+    infra: aws
+    name: nearestcabs
+    url: ${name}.${target-base}
+    instances: 1
+    services: 
+      mdb:
+        type: mongodb
+    mem: 64M
+    framework: 
+      name: node
+      info: 
+        description: Node.js Application
+        exec: 
+        mem: 64M
